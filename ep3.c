@@ -1,13 +1,3 @@
-/* ************************************************************************** */
-/* Nome: Giovana Oshiro da Silva                                              */
-/* Numero USP: 8022103                                                        */
-/*                                                                            */
-/* Nome: Lucas Freitas Bastos                                                 */
-/* Numero USP: 9783118                                                        */
-/*                                                                            */
-/* ExercÌÅcio-programa 3                                                       */
-/* ************************************************************************** */
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
@@ -64,7 +54,7 @@ void construir_heap (int n, celula heap []){
 }
 
 /* A funcao minimo recebe um vetor de celula ordenado em heap e o seu tamanho,
-procura a casa com a menor das frequÍncias e troca todo o conte˙do dessa casa
+procura a casa com a menor das frequ√™ncias e troca todo o conte√∫do dessa casa
 com a ultima posicao do vetor. */
 
 void minimo (celula heap [], int n){
@@ -158,7 +148,7 @@ int main (){
   FILE * entrada;
   FILE * saida;
   int comando, i, frequencias [256], leitura = 0, asc, n = 1, j, minimo1, minimo2;
-  int binario[256][50], caminho [50], altura = 0, direcao = -1; /* funÁ„o monta_matriz */
+  int binario[256][50], caminho [50], altura = 0, direcao = -1; /* fun√ß√£o monta_matriz */
   int t = 0, v_binario [8], aux_binario [300], p, flag = 0;
   int frequencia;
   char arquivo_entrada [50], arquivo_saida [50];
@@ -227,7 +217,7 @@ int main (){
 
     /* O programa entra, entao, num laco para construir a arvore de Huffman. As
     menores frequencias, duas a duas, do vetor heap [] sao retiradas do vetor e
-    a soma das frequÍncias eh inserida no vetor. Os ponteiros *esq e *dir apontam
+    a soma das frequ√™ncias eh inserida no vetor. Os ponteiros *esq e *dir apontam
     para as frequencias retiradas (as frequencias minimas). Isto eh, cada soma de
     frequencia inserida no vetor eh um no que eh pai das duas frequencias minimas. */
 
@@ -344,7 +334,7 @@ int main (){
     fclose (entrada);
     fclose (saida);
 
-    printf ("Verifique o arquivo de saÌda para visualizar o arquivo compactado.\n");
+    printf ("Verifique o arquivo de sa√≠da para visualizar o arquivo compactado.\n");
 
   } /* if (comando == 1) */
 
@@ -353,7 +343,7 @@ int main (){
     printf ("Entre com o nome do arquivo a ser descompactado:\n");
     scanf ("%s", arquivo_entrada);
 
-    printf ("Entre com o nome do arquivo de saÌda:\n");
+    printf ("Entre com o nome do arquivo de sa√≠da:\n");
     scanf ("%s", arquivo_saida);
 
     entrada = fopen (arquivo_entrada, "r");
@@ -362,7 +352,7 @@ int main (){
     for (i = 0; i < 256; i++) frequencias [i] = 0; /* zerar vetor */
 
     /* O arquivo de entrada possui na primeira linha a arvore impressa, com os
-    caracteres e suas respectivas frequÍncias. Vamos ler a arvore e remontar
+    caracteres e suas respectivas frequ√™ncias. Vamos ler a arvore e remontar
     o vetor frequencias []. Depois disso, o programa eh executado exatamente da
     mesma forma que na compactacao, ate a arvore ser remontada. */
 
