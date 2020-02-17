@@ -1,0 +1,1 @@
+# Compacta-o-de-arquivos
