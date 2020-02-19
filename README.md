@@ -1,1 +1,1 @@
-# Compacta-o-de-arquivos
+# Compactação de arquivos
